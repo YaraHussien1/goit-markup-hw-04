@@ -7,8 +7,10 @@
   --brand-text-color: #212121;
   --brand-sub-color: #757575;
   --brand-white-color: #fff;
+  --icon-fill-color: #AFB1B8;
   --font-fmily-brand: "Raleway", sans-serif;
   --font-family-main: "Roboto", sans-serif;
+
 }
 /* Body Css */
 body {
@@ -49,6 +51,78 @@ img {
   margin: 0;
 }
 
+
+.icon {
+  display: inline-block;
+  width: 16px;
+  height: 12px;
+  /* stroke-width: 0; */
+  /* stroke: currentColor; */
+  fill: var(--icon-fill-color);
+}
+.icon.contact{
+  margin-right: 10px;
+  width: 16px;
+  height: 12px;
+ 
+}
+
+.icon.social{
+width: 20px;
+height: 20px;  
+}
+.icon.social.facebook{
+  /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));  */
+}
+
+.list.social-icons .list-item {
+  width: 44px;
+  height: 44px;
+  padding: 12px 12px;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+
+.social-icons-footer .list.social-icons .list-item {
+  background: rgba(255, 255, 255, 0.1);
+}
+.list.social-icons .list-item:hover{
+  background-color: var(--brand-color);
+
+}
+.list.social-icons .list-item:hover .icon{
+  stroke: var(--brand-white-color);
+ fill: var(--brand-white-color);
+}
+.list.footer-list .list-item .icon{
+  stroke: var(--brand-white-color);
+ fill: var(--brand-white-color);
+}
+.list.social-icons .list-item:not(:last-child) {
+  margin-right: 10px;
+}
+.div-icon{
+  padding: 25px 100px;
+  border-radius: 4px;
+  background-color: var(--brand-background-sub-color)
+}
+.div-icon .icon{
+ width: 70px;
+ height: 70px;
+ margin:auto;
+}
+.list.social-icons{
+  display: flex;
+  justify-content: center;
+ padding-top: 16px;
+
+}
+.list.footer-list.social-icons{
+  display: flex;
+  justify-content: center;
+ padding-top: 20px;
+
+}
 /* container */
 .container {
   width: 1200px;
@@ -101,6 +175,9 @@ img {
 .link:focus {
   color: var(--brand-color);
 }
+ .link:hover .icon.contact{
+stroke: var(--brand-color);
+}
 /* Buttons Css */
 .btn {
   cursor: pointer;
@@ -119,6 +196,7 @@ img {
   padding-top: 25px;
   padding-bottom: 25px;
 }
+
 /* Section */
 .section {
   padding-top: 94px;
@@ -131,6 +209,8 @@ img {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
+  background: #C4C4C4 url('/images/bg/bg-img.jpg') no-repeat
+  center;
 }
 .title {
   font-weight: 900;
@@ -167,6 +247,7 @@ img {
   padding-top: 0;
 }
 .section .sction-sub-title {
+  padding-top:30px;
   font-weight: 700;
   margin-bottom: 9.4px;
   line-height: 1.1;
@@ -197,7 +278,9 @@ img {
 }
 /* About css */
 /* about- */
-.about-list {
+
+.about-list,
+.customers-list {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
@@ -208,6 +291,21 @@ img {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
+}
+
+.customers-list .customer-item{
+  flex-basis: calc(100% / 6 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+  border: 1px solid #AFB1B8;
+border-radius: 4px;
+}
+.customer-item:hover{
+  border: 1px solid var(--brand-color);
+  cursor: pointer;
+}
+.customer-item:hover  .icon.customer{
+  fill: var(--brand-color);
 }
 .section-title {
   color: var(--brand-text-color);
@@ -222,6 +320,7 @@ img {
   background: var(--brand-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+
   border-radius: 0px 0px 4px 4px;
 }
 .team-item .team-image {
@@ -316,6 +415,10 @@ img {
 .portfolio-item .portfolio-img {
   margin-bottom: 20px;
 }
+.portfolio-item:hover{
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+}
 
 /* Footer - Style */
 .footer {
@@ -343,4 +446,27 @@ img {
 .contact.link:hover,
 .address .link:hover {
   color: var(--brand-white-color);
+}
+.footer .container{
+  display: flex;
+}
+.social-icons-footer{
+  padding:15px 70px ;
+
+}
+.footer-title{
+  color: var(--brand-white-color);
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+}
+.div-icon-customer {
+  padding: 16px 31px;
+}
+.div-icon-customer .icon.customer{
+  width: 106px;
+  height: 60px;
 }
