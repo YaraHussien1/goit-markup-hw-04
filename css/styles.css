@@ -448,6 +448,10 @@ border-radius: 4px;
 .address .link:hover {
   color: var(--brand-white-color);
 }
+.link:hover .contact{
+  fill: var(--brand-color);
+}
+
 .footer .container{
   display: flex;
 }
