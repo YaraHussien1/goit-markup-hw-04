@@ -229,7 +229,7 @@ stroke: var(--brand-color);
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
-  background: #C4C4C4 url('bg-img.jpg') no-repeat center;
+  background: #C4C4C4 url('../images/bg/bg-img.jpg') no-repeat center;
 }
 .title {
   font-weight: 900;
