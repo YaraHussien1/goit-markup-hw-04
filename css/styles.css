@@ -123,6 +123,9 @@ height: 20px;
  padding-top: 20px;
 
 }
+.customer-item:hover  .icon.customer{
+  fill: var(--brand-color);
+}
 /* container */
 .container {
   width: 1200px;
@@ -177,6 +180,13 @@ height: 20px;
 }
  .link:hover .icon.contact{
 stroke: var(--brand-color);
+}
+.div-icon-customer {
+  padding: 16px 31px;
+}
+.div-icon-customer .icon.customer{
+  width: 106px;
+  height: 60px;
 }
 /* Buttons Css */
 .btn {
@@ -303,9 +313,7 @@ border-radius: 4px;
   border: 1px solid var(--brand-color);
   cursor: pointer;
 }
-.customer-item:hover  .icon.customer{
-  fill: var(--brand-color);
-}
+
 .section-title {
   color: var(--brand-text-color);
   font-weight: 700;
@@ -466,11 +474,4 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
-}
-.div-icon-customer {
-  padding: 16px 31px;
-}
-.div-icon-customer .icon.customer{
-  width: 106px;
-  height: 60px;
 }
